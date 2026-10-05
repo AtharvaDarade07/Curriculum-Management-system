@@ -1,66 +1,74 @@
-# Curriculum Management System
+Curriculum Management System
 
-A web-based **Curriculum Management System** designed to simplify, digitize, and manage academic curriculum and syllabus-related processes within an educational institution.
+A web-based Curriculum Management System developed to simplify, digitize, and manage academic curriculum and syllabus-related processes within an educational institution.
 
-The system provides a centralized platform for managing curriculum structures, schemes, courses, electives, syllabus information, booklet generation, dashboards, and academic progress.
+This project provides a centralized platform for managing curriculum structures, schemes, courses, electives, syllabus information, booklet generation, dashboards, and academic workflows.
 
-## Overview
+«My Contribution: I worked on the development of this project as part of the team, with a primary focus on Laravel/PHP full-stack development, backend functionality, database integration, curriculum workflows, and UI implementation.»
 
-Managing academic curriculum manually can involve multiple documents, spreadsheets, approvals, and disconnected workflows. This project aims to provide a structured digital system where curriculum-related information can be created, updated, reviewed, and managed from a centralized platform.
+---
 
-The system includes dedicated functionality for curriculum and scheme management along with dashboards and academic workflow support.
+📌 Overview
 
-## Key Features
+Managing academic curriculum manually can involve multiple documents, spreadsheets, approvals, and disconnected workflows.
 
-### Curriculum & CDC Management
+The Curriculum Management System aims to provide a structured digital platform where curriculum-related information can be created, updated, reviewed, and managed from a centralized system.
+
+The application includes dedicated modules for curriculum and scheme management, elective management, syllabus management, dashboards, academic progress tracking, and booklet generation.
+
+---
+
+🚀 Key Features
+
+Curriculum & CDC Management
 
 - Dynamic curriculum and CDC structure management
 - Curriculum scheme definition and modification
 - Course and subject management
 - Curriculum structure organization
-- Integration between CDC and elective pools
+- CDC and elective pool integration
 - Dynamic scheme selection
 
-### Elective Management
+Elective Management
 
 - Elective pool management
 - CDC-to-elective-pool selection
 - Dynamic elective allocation
-- Structured management of elective subjects
+- Structured elective subject management
 
-### Syllabus & Scheme Management
+Syllabus & Scheme Management
 
 - Syllabus structure management
-- Scheme definition and improvement
+- Scheme definition and modification
 - Academic scheme organization
 - Syllabus-related administrative workflows
 
-### Booklet Generation
+📄 Booklet Generation
 
 - Automated curriculum/scheme booklet generation
-- Improved booklet generation workflow
-- Structured academic information for booklet preparation
+- Structured academic information
+- Improved booklet preparation workflow
+- Document/report generation support
 
-### Dashboards
+📊 Dashboards
 
 - Role-based dashboard structure
 - Academic progress tracking
-- Pipeline and workflow tracking
-- Centralized overview of curriculum-related activities
+- Workflow and pipeline tracking
+- Centralized curriculum activity overview
 
-## System Architecture
+---
 
-The application follows a modular web application architecture built around the Laravel framework.
+🏗️ System Architecture
 
-```text
                     ┌──────────────────────────┐
                     │       Web Interface       │
-                    │      Blade / JavaScript   │
+                    │    Blade / JavaScript     │
                     └────────────┬─────────────┘
                                  │
                                  ▼
                     ┌──────────────────────────┐
-                    │     Laravel Application   │
+                    │    Laravel Application    │
                     │                          │
                     │ Controllers              │
                     │ Services                 │
@@ -71,30 +79,31 @@ The application follows a modular web application architecture built around the 
                 ┌────────────────┴────────────────┐
                 ▼                                 ▼
        ┌──────────────────┐              ┌──────────────────┐
-       │    Database      │              │  File Generation │
+       │    Database      │              │ File Generation  │
        │                  │              │                  │
        │ Curriculum       │              │ Booklets         │
        │ Schemes          │              │ Documents        │
        │ Courses          │              │ Reports          │
        │ Electives        │              │                  │
        └──────────────────┘              └──────────────────┘
-```
 
-## Technology Stack
+---
 
-| Layer | Technology |
-|---|---|
-| Backend | Laravel / PHP |
-| Frontend | Blade, JavaScript, CSS |
-| Database | Relational Database |
-| Package Management | Composer |
-| Frontend Build Tool | Vite |
-| Testing | PHPUnit |
-| Version Control | Git / GitHub |
+🛠️ Technology Stack
 
-## Project Structure
+Layer| Technology
+Backend| PHP / Laravel
+Frontend| Blade, JavaScript, CSS
+Database| MySQL / Relational Database
+Package Manager| Composer
+Frontend Build Tool| Vite
+Testing| PHPUnit
+Version Control| Git / GitHub
 
-```text
+---
+
+📂 Project Structure
+
 Curriculum-Management-system/
 │
 ├── app/
@@ -122,136 +131,122 @@ Curriculum-Management-system/
 ├── composer.json
 ├── package.json
 └── vite.config.js
-```
 
-## Core Modules
+---
 
-The project currently focuses on the following major areas:
+👨‍💻 My Contribution
 
-- **CDC / Curriculum Management**
-- **Scheme Management**
-- **Course Management**
-- **Elective Pool Management**
-- **Syllabus Management**
-- **Booklet Generation**
-- **Dashboard Management**
-- **Academic Progress Tracking**
-- **Workflow / Pipeline Management**
+I contributed to the development of this project as a Laravel/PHP Full-Stack Developer.
 
-## Installation
+My work includes:
 
-### Prerequisites
+- Developing backend functionality using Laravel and PHP
+- Working with Laravel MVC architecture
+- Creating and modifying controllers, models, routes, and services
+- Working with database structures and relationships
+- Implementing curriculum and scheme-related workflows
+- Working on elective pool functionality
+- Developing and integrating Blade-based interfaces
+- Implementing frontend functionality using JavaScript
+- Working with dynamic forms and academic data
+- Debugging and improving application functionality
+- Working with Git and GitHub for version control
+- Contributing to booklet/document generation functionality
+
+---
+
+⚙️ Installation
+
+Prerequisites
 
 Make sure the following are installed:
 
-- PHP
+- PHP 8.3+
 - Composer
 - Node.js and npm
-- A supported relational database
+- MySQL or another supported relational database
 - Git
 
-### Clone the Repository
+Clone the Repository
 
-```bash
-git clone https://github.com/rishihake-21/Curriculum-Management-system.git
+git clone <YOUR-FORK-REPOSITORY-URL>
 cd Curriculum-Management-system
-```
 
-### Install PHP Dependencies
+Install PHP Dependencies
 
-```bash
 composer install
-```
 
-### Install Frontend Dependencies
+Install Frontend Dependencies
 
-```bash
 npm install
-```
 
-### Environment Configuration
+Environment Configuration
 
-Create the environment file:
+Copy the example environment file:
 
-```bash
 cp .env.example .env
-```
 
-On Windows, you can copy `.env.example` to `.env` manually.
+On Windows, copy ".env.example" manually and rename it to ".env".
 
-Configure the database and other required environment variables in `.env`.
+Configure the database credentials inside ".env".
 
 Generate the Laravel application key:
 
-```bash
 php artisan key:generate
-```
 
-### Database Setup
+Database Setup
 
 Run migrations:
 
-```bash
 php artisan migrate
-```
 
-If the project requires seed data:
+If seed data is required:
 
-```bash
 php artisan db:seed
-```
 
-### Build Frontend Assets
+Build Frontend Assets
 
 For development:
 
-```bash
 npm run dev
-```
 
 For production:
 
-```bash
 npm run build
-```
 
-### Start the Application
+Start the Application
 
-```bash
 php artisan serve
-```
 
 The application will normally be available at:
 
-```text
 http://127.0.0.1:8000
-```
 
-## Development Workflow
+---
 
-A typical development workflow is:
+🔄 Development Workflow
 
-```text
 Requirement
      ↓
 Curriculum / Scheme Design
      ↓
 Database Structure
      ↓
-Backend Logic
+Backend Development
      ↓
-Dashboard / UI
+Dashboard / UI Development
      ↓
-Testing
+Testing & Debugging
      ↓
 Booklet / Document Generation
      ↓
 Academic Review
-```
 
-## Project Goals
+---
 
-The main goals of the system are to:
+🎯 Project Goals
+
+The main objectives of the system are to:
 
 - Digitize curriculum management workflows
 - Reduce manual curriculum-related work
@@ -262,25 +257,29 @@ The main goals of the system are to:
 - Support automated academic document generation
 - Provide a structured platform for future ERP integration
 
-## Future Scope
+---
+
+🔮 Future Scope
 
 Potential future enhancements include:
 
-- Integration with an institutional ERP/UMS
+- Institutional ERP/UMS integration
 - Advanced role-based access control
-- Approval workflows for curriculum changes
-- Version control for curriculum schemes
+- Curriculum approval workflows
+- Curriculum scheme version control
 - Advanced academic analytics
 - Notification and communication systems
-- Improved reporting
-- API-based integration with other academic systems
+- Advanced reporting
+- API integration with other academic systems
 - Audit logs for curriculum modifications
 
-## Project Status
+---
 
-The system is under active development.
+📌 Project Status
 
-Current development focuses on improving:
+Active Development
+
+Current development areas include:
 
 - Curriculum/CDC workflows
 - Dynamic scheme management
@@ -289,16 +288,31 @@ Current development focuses on improving:
 - Academic progress tracking
 - Booklet generation
 
-## License
+---
 
-This project is developed for academic and institutional use.
+🤝 Team Project
+
+This project was developed collaboratively.
+
+The original project repository was maintained by Rushikesh Hake, and I contributed to the development and implementation of various modules.
 
 ---
 
-## Author
+👤 Contributor
 
-**Rushikesh Hake**
+Atharva Darade
 
-Computer Technology Student
+Computer Engineering Student | Laravel / PHP Full-Stack Developer
 
-GitHub: [@rishihake-21](https://github.com/rishihake-21)
+- Laravel
+- PHP
+- MySQL
+- Blade
+- JavaScript
+- Git & GitHub
+
+---
+
+📄 License
+
+This project is developed for academic and institutional use.
